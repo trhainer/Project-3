@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		135FD70C22DE8F71005825F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FD70B22DE8F71005825F1 /* AppDelegate.swift */; };
-		135FD70E22DE8F71005825F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FD70D22DE8F71005825F1 /* ViewController.swift */; };
+		135FD70E22DE8F71005825F1 /* CopyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FD70D22DE8F71005825F1 /* CopyListViewController.swift */; };
 		135FD71122DE8F71005825F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135FD70F22DE8F71005825F1 /* Main.storyboard */; };
 		135FD71422DE8F71005825F1 /* Project_3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 135FD71222DE8F71005825F1 /* Project_3.xcdatamodeld */; };
 		135FD71622DE8F72005825F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135FD71522DE8F72005825F1 /* Assets.xcassets */; };
 		135FD71922DE8F72005825F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135FD71722DE8F72005825F1 /* LaunchScreen.storyboard */; };
+		135FD72222DE950A005825F1 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 135FD72022DE950A005825F1 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		135FD70822DE8F71005825F1 /* Project 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		135FD70B22DE8F71005825F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		135FD70D22DE8F71005825F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		135FD70D22DE8F71005825F1 /* CopyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListViewController.swift; sourceTree = "<group>"; };
 		135FD71022DE8F71005825F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		135FD71322DE8F71005825F1 /* Project_3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_3.xcdatamodel; sourceTree = "<group>"; };
 		135FD71522DE8F72005825F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		135FD71822DE8F72005825F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		135FD71A22DE8F72005825F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		135FD72122DE950A005825F1 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				135FD70B22DE8F71005825F1 /* AppDelegate.swift */,
-				135FD70D22DE8F71005825F1 /* ViewController.swift */,
+				135FD70D22DE8F71005825F1 /* CopyListViewController.swift */,
 				135FD70F22DE8F71005825F1 /* Main.storyboard */,
 				135FD71522DE8F72005825F1 /* Assets.xcassets */,
 				135FD71722DE8F72005825F1 /* LaunchScreen.storyboard */,
 				135FD71A22DE8F72005825F1 /* Info.plist */,
 				135FD71222DE8F71005825F1 /* Project_3.xcdatamodeld */,
+				135FD72022DE950A005825F1 /* DataModel.xcdatamodeld */,
 			);
 			path = "Project 3";
 			sourceTree = "<group>";
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135FD70E22DE8F71005825F1 /* ViewController.swift in Sources */,
+				135FD70E22DE8F71005825F1 /* CopyListViewController.swift in Sources */,
+				135FD72222DE950A005825F1 /* DataModel.xcdatamodeld in Sources */,
 				135FD70C22DE8F71005825F1 /* AppDelegate.swift in Sources */,
 				135FD71422DE8F71005825F1 /* Project_3.xcdatamodeld in Sources */,
 			);
@@ -349,6 +353,16 @@
 			);
 			currentVersion = 135FD71322DE8F71005825F1 /* Project_3.xcdatamodel */;
 			path = Project_3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		135FD72022DE950A005825F1 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				135FD72122DE950A005825F1 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 135FD72122DE950A005825F1 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
