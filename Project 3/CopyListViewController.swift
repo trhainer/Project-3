@@ -62,13 +62,14 @@ class CopyListViewController: UITableViewController {
         if itemArray[indexPath.row].done == false {
             itemArray[indexPath.row].done = true
             
-            let newStore = Store(context: self.context)
-            newStore.title = itemArray[indexPath.row].title
-            self.storeArray.append(newStore)
-            
+//            let newStore = Store(context: self.context)
+//            newStore.title = itemArray[indexPath.row].title
+//            self.storeArray.append(newStore)
             
         } else {
             itemArray[indexPath.row].done = false
+//            context.delete(storeArray[indexPath.row])
+//            storeArray.remove(at: indexPath.row)
         }
         
         saveItems()
@@ -121,15 +122,13 @@ class CopyListViewController: UITableViewController {
         
     }
     
-    func loadItems() {
-        let request : NSFetchRequest<Item> = Item.fetchRequest()
+    func loadItems(with request : NSFetchRequest<Item> = Item.fetchRequest()) {
+        
         do {
         itemArray = try context.fetch(request)
         } catch {
             print("Error fetching data from context \(error)")
         }
     }
-    
-    
-    
 }
+
