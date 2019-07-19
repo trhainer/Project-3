@@ -13,6 +13,12 @@ class CategoryViewController: UITableViewController {
     
     var categories = [Category]()
     
+    var selectedProject : Project? {
+        didSet {
+            loadCategories()
+        }
+    }
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     override func viewDidLoad() {
@@ -71,6 +77,10 @@ class CategoryViewController: UITableViewController {
         
         let request : NSFetchRequest<Category> = Category.fetchRequest()
         
+        let predicate = NSPredicate(format: "parentProject.name MATCHES %@", selectedProject!.name!)
+        
+        request.predicate = predicate
+        
         do {
             categories = try context.fetch(request)
         } catch {
@@ -93,7 +103,7 @@ class CategoryViewController: UITableViewController {
             
             let newCategory = Category(context: self.context)
             newCategory.name = textField.text!
-            
+            newCategory.parentProject = self.selectedProject
             self.categories.append(newCategory)
             
             self.saveCategories()

@@ -42,6 +42,19 @@ class ProjectViewController: UITableViewController {
     
     // MARK - TableView Delegate Methods:
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToCategory", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! CategoryViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.selectedProject = projects[indexPath.row]
+        }
+        
+    }
+    
     // MARK - Data Manipulation Methods:
     
     func saveProjects() {
