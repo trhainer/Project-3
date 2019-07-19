@@ -28,10 +28,10 @@ class CopyListViewController: UITableViewController {
     // MARK - TableView Datasource Methods:
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemArray.count ; storeArray.count
+        return itemArray.count // storeArray.count
         
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "CopyItemCell", for: indexPath)
