@@ -3,18 +3,24 @@
     <entity name="Category" representedClassName=".Category" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="parentCategory" inverseEntity="Item" syncable="YES"/>
+        <relationship name="parentProject" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="categories" inverseEntity="Project" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName=".Item" syncable="YES" codeGenerationType="class">
         <attribute name="done" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
         <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="items" inverseEntity="Category" syncable="YES"/>
     </entity>
+    <entity name="Project" representedClassName=".Project" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="categories" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="parentProject" inverseEntity="Category" syncable="YES"/>
+    </entity>
     <entity name="Store" representedClassName=".Store" syncable="YES" codeGenerationType="class">
         <attribute name="title" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Category" positionX="-218.09375" positionY="-9.546875" width="128" height="73"/>
+        <element name="Category" positionX="-218.09375" positionY="-9.546875" width="128" height="88"/>
         <element name="Item" positionX="-54" positionY="-9" width="128" height="88"/>
         <element name="Store" positionX="-53.05859375" positionY="87.31640625" width="128" height="60"/>
+        <element name="Project" positionX="-370.1171875" positionY="-9.25" width="128" height="73"/>
     </elements>
 </model>

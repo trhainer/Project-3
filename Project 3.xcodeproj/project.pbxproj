@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1337777E22E23D8B00F37549 /* ProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1337777D22E23D8B00F37549 /* ProjectViewController.swift */; };
 		135FD70C22DE8F71005825F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FD70B22DE8F71005825F1 /* AppDelegate.swift */; };
 		135FD70E22DE8F71005825F1 /* CopyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FD70D22DE8F71005825F1 /* CopyListViewController.swift */; };
 		135FD71122DE8F71005825F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135FD70F22DE8F71005825F1 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1337777D22E23D8B00F37549 /* ProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewController.swift; sourceTree = "<group>"; };
 		135FD70822DE8F71005825F1 /* Project 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		135FD70B22DE8F71005825F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135FD70D22DE8F71005825F1 /* CopyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		1374392F22E1332500462CFB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1337777D22E23D8B00F37549 /* ProjectViewController.swift */,
 				1374393022E13A4600462CFB /* CategoryViewController.swift */,
 				135FD70D22DE8F71005825F1 /* CopyListViewController.swift */,
 			);
@@ -170,6 +173,7 @@
 			files = (
 				1374393122E13A4600462CFB /* CategoryViewController.swift in Sources */,
 				135FD70E22DE8F71005825F1 /* CopyListViewController.swift in Sources */,
+				1337777E22E23D8B00F37549 /* ProjectViewController.swift in Sources */,
 				135FD72222DE950A005825F1 /* DataModel.xcdatamodeld in Sources */,
 				135FD70C22DE8F71005825F1 /* AppDelegate.swift in Sources */,
 				135FD71422DE8F71005825F1 /* Project_3.xcdatamodeld in Sources */,

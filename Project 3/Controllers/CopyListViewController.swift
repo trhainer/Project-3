@@ -14,6 +14,7 @@ class CopyListViewController: UITableViewController {
     var itemArray = [Item]()
     var storeArray = [Store]()
     
+    
     var selectedCategory : Category? {
         didSet {
             loadItems()
@@ -32,8 +33,7 @@ class CopyListViewController: UITableViewController {
     // MARK - TableView Datasource Methods:
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemArray.count // storeArray.count
-        
+        return itemArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
